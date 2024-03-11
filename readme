@@ -1,18 +1,17 @@
-Rodando a API serverest
+# Rodando a API serverest
 docker run -p 3000:3000 paulogoncalvesbh/serverest:latest
 
 Ajustar o IP da API nos scripts.
 
 
-Rodando os testes com Gatling
+# Rodando os testes com Gatling
 
+## WSL
 No WSL, selecione a pasta raiz do projeto e execute o comando abaixo:
-
-WSL
 docker run -it --rm -v "./Testes/Carga:/opt/gatling/user-files/simulations" -v "./Testes/results:/opt/gatling/results" denvazh/gatling
 
-Docker Desktop com Rede Específica:
+## Docker Desktop com Rede Específica:
 docker run -it --rm --network TESTE -v ".\Testes\Carga:/opt/gatling/user-files/simulations" -v ".\Testes\results:/opt/gatling/results" denvazh/gatling
 
-Tutorial
+# Tutorial
 https://docs.gatling.io/tutorials/
