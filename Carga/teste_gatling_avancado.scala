@@ -19,7 +19,6 @@ class AdvancedSimulation extends Simulation {
     .exec(http("GET_usuarios")
       .get("/usuarios")
       .check(status.is(200)))
-      .pause(2, 5)
 
   val scnGetProdutos = scenario("Buscar produtos")
     .exec(http("GET_produtos")
@@ -28,13 +27,11 @@ class AdvancedSimulation extends Simulation {
         status.not(404),
         status.not(500)
       ))
-      .pause(3, 6)
 
   val scnGetCarrinhos = scenario("Buscar carrinhos")
     .exec(http("GET_carrinhos")
       .get("/carrinhos")
       .check(jsonPath("$.quantidade").is("1")))
-    .pause(4, 7)
 
   val scnPostUsuario = scenario("Criar Usuário")
     .exec(session => {

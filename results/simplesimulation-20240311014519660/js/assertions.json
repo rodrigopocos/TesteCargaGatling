@@ -1,0 +1,27 @@
+{
+  "simulation": "SimpleSimulation",
+  "simulationId": "simplesimulation",
+  "start": 1710121519660,
+  "description": "",
+  "scenarios": ["Buscar usuários"],
+  "assertions": [
+{
+  "path": "Global",
+  "target": "max of response time",
+  "condition": "is less than",
+  "expectedValues": [100.0],
+  "result": true,
+  "message": "Global: max of response time is less than 100.0",
+  "actualValue": [99.0]
+},
+{
+  "path": "GET_usuarios",
+  "target": "percentage of failed events",
+  "condition": "is less than or equal to",
+  "expectedValues": [5.0],
+  "result": true,
+  "message": "GET_usuarios: percentage of failed events is less than or equal to 5.0",
+  "actualValue": [0.0]
+}
+  ]
+}
