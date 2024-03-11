@@ -1,0 +1,10 @@
+{
+  "simulation": "AdvancedSimulation",
+  "simulationId": "advancedsimulation",
+  "start": 1710034130939,
+  "description": "",
+  "scenarios": ["Buscar usuários", "Buscar produtos", "Buscar carrinhos"],
+  "assertions": [
+
+  ]
+}

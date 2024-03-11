@@ -1,0 +1,4 @@
+RUN	BasicSimulation	basicsimulation	1710032414495	 	3.2.1
+USER	Buscar usuários cadastrados	1	START	1710032415478	1710032415478
+REQUEST	1		GET_usuarios	1710032415494	1710032419430	KO	j.n.UnknownHostException: dreamy_northcutt: Name does not resolve
+USER	Buscar usuários cadastrados	1	END	1710032415478	1710032424450

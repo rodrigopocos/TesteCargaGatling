@@ -1,0 +1,27 @@
+{
+  "simulation": "AdvancedSimulation",
+  "simulationId": "advancedsimulation",
+  "start": 1710114893525,
+  "description": "",
+  "scenarios": ["Editar Usuário"],
+  "assertions": [
+{
+  "path": "Global",
+  "target": "max of response time",
+  "condition": "is less than",
+  "expectedValues": [100.0],
+  "result": true,
+  "message": "Global: max of response time is less than 100.0",
+  "actualValue": [17.0]
+},
+{
+  "path": "PUT_Usuario",
+  "target": "percentage of failed events",
+  "condition": "is less than or equal to",
+  "expectedValues": [5.0],
+  "result": false,
+  "message": "PUT_Usuario: percentage of failed events is less than or equal to 5.0",
+  "actualValue": [100.0]
+}
+  ]
+}

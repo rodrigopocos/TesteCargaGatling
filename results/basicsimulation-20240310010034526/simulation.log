@@ -1,0 +1,4 @@
+RUN	BasicSimulation	basicsimulation	1710032434526	 	3.2.1
+USER	Buscar usuários cadastrados	1	START	1710032435270	1710032435270
+REQUEST	1		GET_usuarios	1710032435286	1710032435296	KO	i.n.c.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:3000
+USER	Buscar usuários cadastrados	1	END	1710032435270	1710032440323

@@ -1,0 +1,45 @@
+{
+  "simulation": "AdvancedSimulation",
+  "simulationId": "advancedsimulation",
+  "start": 1710036550220,
+  "description": "",
+  "scenarios": ["Buscar usuários", "Buscar produtos", "Buscar carrinhos"],
+  "assertions": [
+{
+  "path": "Global",
+  "target": "max of response time",
+  "condition": "is less than",
+  "expectedValues": [100.0],
+  "result": true,
+  "message": "Global: max of response time is less than 100.0",
+  "actualValue": [26.0]
+},
+{
+  "path": "GET_usuarios",
+  "target": "percentage of failed events",
+  "condition": "is less than or equal to",
+  "expectedValues": [5.0],
+  "result": true,
+  "message": "GET_usuarios: percentage of failed events is less than or equal to 5.0",
+  "actualValue": [0.0]
+},
+{
+  "path": "GET_carrinhos",
+  "target": "percentage of failed events",
+  "condition": "is less than or equal to",
+  "expectedValues": [5.0],
+  "result": true,
+  "message": "GET_carrinhos: percentage of failed events is less than or equal to 5.0",
+  "actualValue": [0.0]
+},
+{
+  "path": "GET_produtos",
+  "target": "percentage of failed events",
+  "condition": "is less than or equal to",
+  "expectedValues": [5.0],
+  "result": true,
+  "message": "GET_produtos: percentage of failed events is less than or equal to 5.0",
+  "actualValue": [0.0]
+}
+  ]
+}

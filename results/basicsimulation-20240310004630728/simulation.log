@@ -1,0 +1,4 @@
+RUN	BasicSimulation	basicsimulation	1710031590728	 	3.2.1
+USER	Buscar usuários cadastrados	1	START	1710031591850	1710031591850
+REQUEST	1		GET_usuarios	1710031591868	1710031601877	KO	i.n.c.ConnectTimeoutException: connection timed out: /172.22.112.1:3000
+USER	Buscar usuários cadastrados	1	END	1710031591850	1710031606910

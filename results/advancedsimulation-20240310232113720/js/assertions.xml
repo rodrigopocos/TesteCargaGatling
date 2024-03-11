@@ -1,0 +1,14 @@
+<testsuite name="AdvancedSimulation" tests="4" errors="0" failures="0" time="0">
+<testcase name="Global: max of response time is less than 100.0" status="true" time="0">
+  <system-out>Global: max of response time is less than 100.0</system-out>
+</testcase>
+<testcase name="GET_carrinhos: percentage of failed events is less than or equal to 5.0" status="true" time="0">
+  <system-out>GET_carrinhos: percentage of failed events is less than or equal to 5.0</system-out>
+</testcase>
+<testcase name="GET_produtos: percentage of failed events is less than or equal to 5.0" status="true" time="0">
+  <system-out>GET_produtos: percentage of failed events is less than or equal to 5.0</system-out>
+</testcase>
+<testcase name="GET_usuarios: percentage of failed events is less than or equal to 5.0" status="true" time="0">
+  <system-out>GET_usuarios: percentage of failed events is less than or equal to 5.0</system-out>
+</testcase>
+</testsuite>
